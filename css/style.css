@@ -1,0 +1,173 @@
+:root {
+  --mainGreen: #7ac308;
+  --mainWhite: #fff;
+  --mainBlack: #000;
+  --grayTrans: rgba(63, 62, 61, 0.698);
+  --mainGrey: rgb(238, 238, 238);
+}
+
+body,
+html {
+  font-family: "roboto" "sans-serif";
+  background: var(--mainWhite);
+  color: var(--mainBlack);
+  overflow-x: hidden;
+}
+/* global styles */
+.btn-green {
+  color: var(--maingreen) !important;
+  border-color: var(--mainGreen) !important;
+}
+.btn-black {
+  color: var(--mainBlack) !important;
+  border-color: var(--mainBlack) !important;
+}
+.btn-black:hover {
+  color: var(--mainGreen) !important;
+  background: var(--mainBlack) !important;
+}
+.btn-Green:hover {
+  color: var(--mainBlack) !important;
+  border-color: var(--mainGreen) !important;
+}
+/* nav links*/
+.navbar-toggler {
+  outline: none !important;
+}
+.toggler-icon {
+  font-size: 2.5rem;
+  color: var(--mainGreen);
+}
+.nav-link {
+  color: var(--mainGreen);
+  transition: all 1s ease-in-out;
+  font-size: 1.5rem;
+  margin: 0 2rem;
+}
+.nav-link:hover {
+  color: var(--mainBlack);
+}
+/* cart styles */
+.cart-info__icon {
+  color: var(--mainBlack);
+  cursor: pointer;
+}
+.cart-info {
+  border: 0.1rem solid var(--mainBlack);
+  color: var(--mainBlack);
+  border-radius: 0.25rem;
+  padding: 0.4rem 0.6rem;
+  cursor: pointer;
+}
+.cart-info:hover {
+  background: var(--mainGreen);
+  border-color: var(--mainGreen);
+  color: var(--mainWhite);
+}
+.cart-info:hover .cart-info__icon {
+  color: var(--mainWhite);
+}
+.max-height {
+  min-height: calc(100vh - 76px);
+  background: linear-gradient(var(--grayTrans), var(--grayTrans)),
+    url("../img/boundles.webp");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.banner {
+  color: var(--mainWhite);
+  margin-top: -4rem;
+}
+.banner-title {
+  color: var(--mainGreen);
+  font-size: 4rem;
+}
+.banner-link {
+  font-size: 1.5rem;
+  color: var(--mainBlack);
+  border: 0.2rem solid var(--mainBlack);
+}
+.banner-link:hover {
+  background: var(--mainBlack);
+  color: var(--mainGreen);
+}
+/* abuot section */
+.about-img__container {
+  position: relative;
+}
+
+/* services */
+.services {
+  color: var(--mainWhite);
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("../img/fitBgc.webp") center/cover fixed no-repeat;
+}
+.services-title {
+  color: var(--mainGreen);
+  letter-spacing: 0.5rem;
+}
+.service-text {
+  word-spacing: 0.5rem;
+}
+/* footer */
+.footer-title {
+  background: var(--mainBlack);
+}
+.footer-contact {
+  background: var(--mainGrey);
+}
+.footer-icon {
+  font-size: 2.5rem;
+  color: var(--mainWhite);
+  transition: all 0.4s ease-in-out;
+}
+.footer-icon:hover {
+  color: var(--mainGreen);
+}
+.footer-contact i {
+  color: var(--mainBlack);
+}
+.footer-contact i:hover {
+  color: var(--mainGreen);
+  cursor: pointer;
+}
+
+/* cart */
+.cart {
+  position: absolute;
+  min-height: 10rem;
+  background: rgba(255, 255, 255, 0.5);
+  top: 0;
+  right: 0;
+  transition: all 0.3s ease-in-out;
+  width: 0;
+  overflow: hidden;
+}
+.show-cart {
+  width: 18rem;
+  padding: 2rem 1.5rem;
+  transform: rotateY(360deg);
+}
+.cart-item-remove {
+  color: var(--mainGreen);
+  transition: all 1s ease-in-out;
+}
+.cart-item {
+  transition: all 2s ease-in-out;
+}
+.cart-item-remove:hover {
+  transform: scale(1.1);
+  color: var(--mainBlack);
+}
+.cart-item-price {
+  font-size: 0.8rem;
+}
+.container-fluid {
+  padding: 0;
+}
+.row {
+  margin: 0;
+}
